@@ -8,7 +8,7 @@ export function useReveal<T extends HTMLElement = HTMLDivElement>(
   options: { threshold?: number; stagger?: number } = {}
 ) {
   const ref = useRef<T | null>(null);
-  const { threshold = 0.15, stagger = 100 } = options;
+  const { threshold = 0.15, stagger = 140 } = options;
 
   useEffect(() => {
     const el = ref.current;
@@ -25,6 +25,13 @@ export function useReveal<T extends HTMLElement = HTMLDivElement>(
             children.forEach((child, i) => {
               child.style.transitionDelay = `${i * stagger}ms`;
               child.classList.add("is-visible");
+            });
+            const rows = entry.target.querySelectorAll<HTMLElement>(
+              "[data-reveal-row]"
+            );
+            rows.forEach((row, i) => {
+              row.style.transitionDelay = `${i * 60}ms`;
+              row.classList.add("is-visible");
             });
             observer.unobserve(entry.target);
           }

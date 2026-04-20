@@ -64,9 +64,29 @@ function Contact() {
                 </div>
               ) : (
                 <form
-                  onSubmit={(e) => {
+                  onSubmit={async (e) => {
                     e.preventDefault();
+                    const fd = new FormData(e.currentTarget);
+                    const payload = {
+                      name: fd.get("name"),
+                      business: fd.get("business"),
+                      phone: fd.get("phone"),
+                      email: fd.get("email"),
+                      work: fd.get("work"),
+                      submittedAt: new Date().toISOString(),
+                      source: "contact-page",
+                    };
+                    try {
+                      await fetch("https://launchdigitally777.app.n8n.cloud/webhook-test/leadData", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(payload),
+                      });
+                    } catch (err) {
+                      console.error("Lead webhook failed", err);
+                    }
                     setSubmitted(true);
+                    window.open("https://calendly.com/infrakore/strategy-call", "_blank", "noopener,noreferrer");
                   }}
                   className="space-y-5"
                 >

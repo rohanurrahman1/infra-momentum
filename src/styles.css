@@ -3,6 +3,10 @@
 @import "tw-animate-css";
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500;700&display=swap");
 
+/* Ensure serif applies everywhere */
+h1, h2, h3, h4, h5, .font-serif { font-family: "Instrument Serif", Georgia, serif !important; font-weight: 400; }
+.italic, em, i { font-style: italic; }
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -105,10 +109,30 @@
 
   .reveal {
     opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 700ms cubic-bezier(0.22, 1, 0.36, 1),
-                transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+    transform: translateY(28px);
+    transition: opacity 1100ms cubic-bezier(0.22, 1, 0.36, 1),
+                transform 1100ms cubic-bezier(0.22, 1, 0.36, 1);
     will-change: opacity, transform;
+  }
+  [data-reveal-child] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1000ms cubic-bezier(0.22, 1, 0.36, 1),
+                transform 1000ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  [data-reveal-child].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  [data-reveal-row] {
+    opacity: 0;
+    transform: translateX(-32px);
+    transition: opacity 900ms cubic-bezier(0.22, 1, 0.36, 1),
+                transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  [data-reveal-row].is-visible {
+    opacity: 1;
+    transform: translateX(0);
   }
   .reveal.is-visible {
     opacity: 1;

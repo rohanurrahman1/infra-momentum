@@ -29,9 +29,34 @@ export function LeadModalProvider({ children }: { children: ReactNode }) {
     };
   }, [isOpen, close]);
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const [submitting, setSubmitting] = useState(false);
+
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setSubmitting(true);
+    const fd = new FormData(e.currentTarget);
+    const payload = {
+      name: fd.get("name"),
+      business: fd.get("business"),
+      phone: fd.get("phone"),
+      email: fd.get("email"),
+      work: fd.get("work"),
+      submittedAt: new Date().toISOString(),
+      source: "lead-modal",
+    };
+    try {
+      await fetch("https://launchdigitally777.app.n8n.cloud/webhook-test/leadData", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+    } catch (err) {
+      console.error("Lead webhook failed", err);
+    }
+    setSubmitting(false);
     setSubmitted(true);
+    // Open Calendly in new tab
+    window.open("https://calendly.com/infrakore/strategy-call", "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -102,10 +127,11 @@ export function LeadModalProvider({ children }: { children: ReactNode }) {
                 </div>
                 <button
                   type="submit"
-                  className="w-full rounded-xl py-3.5 font-medium transition-all duration-300 hover:brightness-110"
+                  disabled={submitting}
+                  className="w-full rounded-xl py-3.5 font-medium transition-all duration-300 hover:brightness-110 disabled:opacity-60"
                   style={{ background: "var(--gold)", color: "#0F1713" }}
                 >
-                  Request My Free Call
+                  {submitting ? "Sending..." : "Request My Free Call"}
                 </button>
                 <p className="text-xs text-white/40 text-center font-light">
                   We typically reply within one business day.

@@ -29,29 +29,32 @@ export function WhyItWorks() {
         </div>
 
         <div
-          className="reveal mt-14 rounded-[14px] overflow-hidden border border-white/7"
+          className="mt-14 rounded-[14px] border border-white/7 overflow-x-auto"
           data-reveal-child
           style={{ background: "#111A14" }}
         >
-          <div className="grid grid-cols-12 px-6 py-5 text-[11px] uppercase tracking-[0.18em] border-b border-white/5">
-            <div className="col-span-4 text-white/40">Category</div>
-            <div className="col-span-4 text-white/40">Typical Approach</div>
-            <div className="col-span-4 text-[color:var(--gold)]">Infrakore</div>
-          </div>
-          {rows.map(([cat, typ, infra], i) => (
-            <div
-              key={cat}
-              className={`grid grid-cols-12 px-6 py-5 text-sm md:text-base ${
-                i !== rows.length - 1 ? "border-b border-white/5" : ""
-              }`}
-            >
-              <div className="col-span-4 text-white/70">{cat}</div>
-              <div className="col-span-4 text-white/45 font-light line-through decoration-white/20">
-                {typ}
-              </div>
-              <div className="col-span-4 text-white font-medium">{infra}</div>
+          <div className="min-w-[640px]">
+            <div className="grid grid-cols-12 px-6 py-5 text-[11px] uppercase tracking-[0.18em] border-b border-white/5">
+              <div className="col-span-4 text-white/40">Category</div>
+              <div className="col-span-4 text-white/40">Typical Approach</div>
+              <div className="col-span-4 text-[color:var(--gold)]">Infrakore</div>
             </div>
-          ))}
+            {rows.map(([cat, typ, infra], i) => (
+              <div
+                key={cat}
+                data-reveal-row
+                className={`grid grid-cols-12 px-6 py-5 text-sm md:text-base ${
+                  i !== rows.length - 1 ? "border-b border-white/5" : ""
+                }`}
+              >
+                <div className="col-span-4 text-white/70">{cat}</div>
+                <div className="col-span-4 text-white/45 font-light line-through decoration-white/20">
+                  {typ}
+                </div>
+                <div className="col-span-4 text-white font-medium">{infra}</div>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div
