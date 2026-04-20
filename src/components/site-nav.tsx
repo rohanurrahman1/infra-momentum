@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { CtaButton } from "./cta-button";
+import logoUrl from "@/assets/infrakore-logo.png";
 
 export function Logo({ className = "" }: { className?: string }) {
   return (
-    <Link to="/" className={`font-sans font-medium text-xl tracking-tight ${className}`}>
-      <span className="text-white">Infra</span>
-      <span className="text-[color:var(--gold)]">kore</span>
+    <Link to="/" className={`inline-flex items-center ${className}`} aria-label="Infrakore home">
+      <img src={logoUrl} alt="Infrakore" className="h-8 md:h-9 w-auto" />
     </Link>
   );
 }
@@ -16,6 +16,8 @@ const links = [
   { href: "#how-it-works", label: "How it works" },
   { href: "#results", label: "Results" },
   { href: "#faq", label: "FAQ" },
+  { href: "/blog", label: "Blog" },
+  { href: "/social", label: "Social Media" },
 ];
 
 export function SiteNav() {
@@ -42,7 +44,7 @@ export function SiteNav() {
       <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
         <Logo />
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-7">
           {links.map((l) => (
             <a
               key={l.href}
@@ -71,7 +73,7 @@ export function SiteNav() {
       <div
         className="md:hidden overflow-hidden transition-all duration-300"
         style={{
-          maxHeight: open ? 320 : 0,
+          maxHeight: open ? 420 : 0,
           background: "rgba(15,23,19,0.98)",
         }}
       >
