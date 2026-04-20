@@ -28,13 +28,13 @@ export function Hero() {
         <h1
           className="fade-up font-serif text-white mt-8 leading-[1.05] tracking-tight"
           style={{
-            fontSize: "clamp(2.75rem, 7vw, 5rem)",
+            fontSize: "clamp(2.625rem, 7vw, 5rem)",
             animationDelay: "150ms",
           }}
         >
           Stop waiting for referrals
           <br />
-          <span className="italic text-[color:var(--gold)]">to find you.</span>
+          <em className="italic text-[color:var(--gold)] font-serif not-italic" style={{ fontStyle: "italic" }}>to find you.</em>
         </h1>
 
         <p
