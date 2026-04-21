@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { CtaButton } from "./cta-button";
 import logoUrl from "@/assets/infrakore-logo.png";
