@@ -44,7 +44,7 @@ export function Faq() {
             Straight answers.
           </h2>
           <p className="mt-5 text-white/55 font-light text-lg">
-            No sales language. Just what you actually want to know.
+            Questions that most business like yours ask.
           </p>
         </div>
 

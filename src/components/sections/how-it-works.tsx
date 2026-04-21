@@ -199,14 +199,11 @@ function EmailPreview() {
       <div className="mt-5 space-y-3 text-white/75 leading-relaxed font-light text-[15px]">
         <p>Hi Jennifer,</p>
         <p>
-          Saw Maple Ridge manages 240 units across six properties in the GTA — most of those buildings are
-          coming up on the typical re-inspection window for flat roof systems.
+          Saw Maple Ridge manages 240 units across six properties in the GTA — most of those buildings are coming up on the typical re-inspection window.
         </p>
-        <p>
-          We work with property managers in your portfolio range across Ontario. Worth a quick conversation
-          before the spring cycle?
-        </p>
-        <p className="text-white/50">— Mark, MK Roofing</p>
+        <button className="text-[color:var(--gold)] text-sm font-medium hover:underline">
+          See more...
+        </button>
       </div>
     </div>
   );

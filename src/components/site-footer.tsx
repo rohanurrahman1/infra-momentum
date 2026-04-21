@@ -19,7 +19,7 @@ export function SiteFooter() {
             <a href="#" aria-label="LinkedIn" className="text-white/50 hover:text-[color:var(--gold)] transition-colors">
               <Linkedin size={18} />
             </a>
-            <a href="#" aria-label="Instagram" className="text-white/50 hover:text-[color:var(--gold)] transition-colors">
+            <a href="https://www.instagram.com/meem.recode?igsh=ZnQyMnNxbmV2anM4&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-white/50 hover:text-[color:var(--gold)] transition-colors">
               <Instagram size={18} />
             </a>
           </div>

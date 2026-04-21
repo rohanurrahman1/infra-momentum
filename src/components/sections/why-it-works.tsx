@@ -36,7 +36,7 @@ export function WhyItWorks() {
           <div className="min-w-[640px]">
             <div className="grid grid-cols-12 px-6 py-5 text-[11px] uppercase tracking-[0.18em] border-b border-white/5">
               <div className="col-span-4 text-white/40">Category</div>
-              <div className="col-span-4 text-white/40">Typical Approach</div>
+              <div className="col-span-4" style={{ color: "#e88a8a" }}>Typical Approach</div>
               <div className="col-span-4 text-[color:var(--gold)]">Infrakore</div>
             </div>
             {rows.map(([cat, typ, infra], i) => (
@@ -48,10 +48,10 @@ export function WhyItWorks() {
                 }`}
               >
                 <div className="col-span-4 text-white/70">{cat}</div>
-                <div className="col-span-4 text-white/45 font-light line-through decoration-white/20">
+                <div className="col-span-4 font-light" style={{ color: "rgba(232, 138, 138, 0.7)" }}>
                   {typ}
                 </div>
-                <div className="col-span-4 text-white font-medium">{infra}</div>
+                <div className="col-span-4 text-white font-medium" style={{ fontSize: "calc(1em + 1px)" }}>{infra}</div>
               </div>
             ))}
           </div>
