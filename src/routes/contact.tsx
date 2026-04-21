@@ -77,7 +77,7 @@ function Contact() {
                       source: "contact-page",
                     };
                     try {
-                      await fetch("https://launchdigitally777.app.n8n.cloud/webhook-test/leadData", {
+                      await fetch("https://launchdigitally777.app.n8n.cloud/webhook/leadData", {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify(payload),
@@ -86,7 +86,7 @@ function Contact() {
                       console.error("Lead webhook failed", err);
                     }
                     setSubmitted(true);
-                    window.open("https://calendly.com/infrakore/strategy-call", "_blank", "noopener,noreferrer");
+                    window.open("https://calendly.com/business-meemcho/30min", "_blank", "noopener,noreferrer");
                   }}
                   className="space-y-5"
                 >

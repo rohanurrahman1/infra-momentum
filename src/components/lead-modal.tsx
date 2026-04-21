@@ -45,7 +45,7 @@ export function LeadModalProvider({ children }: { children: ReactNode }) {
       source: "lead-modal",
     };
     try {
-      await fetch("https://launchdigitally777.app.n8n.cloud/webhook-test/leadData", {
+      await fetch("https://launchdigitally777.app.n8n.cloud/webhook/leadData", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
@@ -56,7 +56,7 @@ export function LeadModalProvider({ children }: { children: ReactNode }) {
     setSubmitting(false);
     setSubmitted(true);
     // Open Calendly in new tab
-    window.open("https://calendly.com/infrakore/strategy-call", "_blank", "noopener,noreferrer");
+    window.open("https://calendly.com/business-meemcho/30min", "_blank", "noopener,noreferrer");
   };
 
   return (
