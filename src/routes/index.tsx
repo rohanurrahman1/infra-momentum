@@ -13,13 +13,13 @@ import { FinalCta } from "@/components/sections/final-cta";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Infrakore — B2B Lead Generation for Ontario Roofing & Exterior Contractors" },
+      { title: "Infrakore | B2B Lead Generation for Ontario Roofing & Exterior Contractors" },
       {
         name: "description",
         content:
           "Personalised emails to the right Ontario property managers, in your inbox every Monday. Built for roofing and exterior contractors.",
       },
-      { property: "og:title", content: "Infrakore — Lead generation for Ontario contractors" },
+      { property: "og:title", content: "Infrakore | Lead generation for Ontario contractors" },
       {
         property: "og:description",
         content:

@@ -16,7 +16,7 @@ export function VideoSection() {
             while you work.
           </h2>
           <p className="mt-5 text-white/55 font-light text-lg max-w-2xl mx-auto">
-            Beyond the Monday inbox — the platform keeps running, tracking, and
+            Beyond the Monday inbox, the platform keeps running, tracking, and
             surfacing the right information so nothing slips through the week.
           </p>
         </div>
@@ -38,7 +38,7 @@ export function VideoSection() {
           >
             <Play size={28} className="text-[color:var(--gold)] ml-1" fill="currentColor" />
           </div>
-          <p className="text-white/50 font-light text-sm">Service Overview Video — Coming Soon</p>
+          <p className="text-white/50 font-light text-sm">Service Overview Video. Coming Soon</p>
         </div>
       </div>
     </section>

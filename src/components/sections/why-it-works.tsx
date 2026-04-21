@@ -2,10 +2,10 @@ import { useReveal } from "@/hooks/use-reveal";
 
 const rows: [string, string, string][] = [
   ["Businesses", "Broad lists, manual search", "Pre-targeted, trade-matched"],
-  ["Decision-makers", "Unknown, often wrong person", "Already mapped before anything goes out"],
+  ["Decision makers", "Unknown, often wrong person", "Already mapped before anything goes out"],
   ["Emails", "Written from scratch each time", "Already written, waiting in your drafts"],
-  ["Follow-ups", "Missed or inconsistent", "Built in — nothing falls through"],
-  ["Monthly cost", "$2,000–$4,000 across tools", "A fraction of that — one platform"],
+  ["Follow ups", "Missed or inconsistent", "Built in. Nothing falls through"],
+  ["Monthly cost", "$2,000 to $4,000 across tools", "A fraction of that on one platform"],
   ["Weekly time", "Hours every week", "10 minutes on Monday"],
 ];
 
@@ -24,7 +24,7 @@ export function WhyItWorks() {
             effort every week. This one doesn't.
           </h2>
           <p className="mt-5 text-white/55 font-light text-lg">
-            Built for contractors who are good at the work — not at chasing the next job.
+            Built for contractors who are good at the work, not at chasing the next job.
           </p>
         </div>
 

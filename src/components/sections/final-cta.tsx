@@ -32,7 +32,7 @@ export function FinalCta() {
           <CtaButton size="lg">Book Your Free 20 Min Strategy Call</CtaButton>
         </div>
         <p data-reveal-child className="mt-6 text-white/40 italic font-light text-sm">
-          Engagements start from a fraction of what you're already spending — covered on the call.
+          Engagements start from a fraction of what you're already spending. Covered on the call.
         </p>
       </div>
     </section>

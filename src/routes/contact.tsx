@@ -7,11 +7,11 @@ import { SiteFooter } from "@/components/site-footer";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Infrakore — Book a Strategy Call" },
+      { title: "Contact Infrakore | Book a Strategy Call" },
       {
         name: "description",
         content:
-          "Book a 20-minute strategy call with Infrakore. No commitment, no sales pressure — a straight conversation about your trade.",
+          "Book a 20-minute strategy call with Infrakore. No commitment, no sales pressure. A straight conversation about your trade.",
       },
       { property: "og:title", content: "Contact Infrakore" },
       {
