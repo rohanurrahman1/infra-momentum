@@ -1,23 +1,30 @@
 import { useEffect, useState } from "react";
-import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { CtaButton } from "./cta-button";
 import logoUrl from "@/assets/infrakore-logo.png";
 
 export function Logo({ className = "" }: { className?: string }) {
+  const handleClick = (e: React.MouseEvent) => {
+    if (window.location.pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
   return (
-    <Link to="/" className={`inline-flex items-center ${className}`} aria-label="Infrakore home">
-      <img src={logoUrl} alt="Infrakore" className="h-8 md:h-9 w-auto" />
-    </Link>
+    <a href="/" onClick={handleClick} className={`inline-flex items-center ${className}`} aria-label="Infrakore home">
+      <img src={logoUrl} alt="Infrakore" className="h-12 md:h-14 w-auto" />
+    </a>
   );
 }
 
+const INSTAGRAM_URL = "https://www.instagram.com/meem.recode?igsh=ZnQyMnNxbmV2anM4&utm_source=qr";
+
 const links = [
-  { href: "#how-it-works", label: "How it works" },
-  { href: "#results", label: "Results" },
-  { href: "#faq", label: "FAQ" },
-  { href: "/blog", label: "Blog" },
-  { href: "/social", label: "Social Media" },
+  { href: "#how-it-works", label: "How it works", external: false },
+  { href: "#results", label: "Results", external: false },
+  { href: "#faq", label: "FAQ", external: false },
+  { href: "/blog", label: "Blog", external: false },
+  { href: INSTAGRAM_URL, label: "Social Media", external: true },
 ];
 
 export function SiteNav() {
@@ -49,6 +56,8 @@ export function SiteNav() {
             <a
               key={l.href}
               href={l.href}
+              target={l.external ? "_blank" : undefined}
+              rel={l.external ? "noopener noreferrer" : undefined}
               className="text-sm text-white/60 hover:text-[color:var(--gold)] transition-colors duration-300 relative group"
             >
               {l.label}
@@ -82,6 +91,8 @@ export function SiteNav() {
             <a
               key={l.href}
               href={l.href}
+              target={l.external ? "_blank" : undefined}
+              rel={l.external ? "noopener noreferrer" : undefined}
               onClick={() => setOpen(false)}
               className="text-white/70 hover:text-[color:var(--gold)] transition-colors"
             >
