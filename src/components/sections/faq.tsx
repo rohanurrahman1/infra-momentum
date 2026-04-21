@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "What type of contractors is this built for?",
-    a: "Roofing, exterior, and commercial trade contractors — HVAC, electrical, plumbing — anyone whose work involves property managers and building operators as clients.",
+    a: "Roofing, exterior, and commercial trade contractors like HVAC, electrical, and plumbing. Anyone whose work involves property managers and building operators as clients.",
   },
   {
     q: "How are property managers selected?",
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "What does it cost?",
-    a: "Covered in full on the discovery call — pricing is based on your trade type, location, and volume. What I can tell you is that most contractors are spending $2,000–$4,000 a month across separate tools for less than what this handles end to end.",
+    a: "Covered in full on the discovery call. Pricing is based on your trade type, location, and volume. What I can tell you is that most contractors are spending $2,000 to $4,000 a month across separate tools for less than what this handles end to end.",
   },
   {
     q: "How quickly does it start?",

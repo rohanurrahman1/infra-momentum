@@ -5,7 +5,7 @@ const steps = [
   {
     tag: "Find",
     title: "The right property managers, already identified",
-    body: "We surface decision-makers managing the kind of properties that need your trade — no broad lists, no wrong contacts.",
+    body: "We surface decision makers managing the kind of properties that need your trade. No broad lists, no wrong contacts.",
     note: "Focused on Ontario-based residential and commercial portfolio managers",
   },
   {
@@ -39,7 +39,7 @@ export function HowItWorks() {
             before you open your inbox.
           </h2>
           <p className="mt-5 text-white/55 font-light text-lg">
-            Every Monday, the right contacts are found, checked, and ready — so your week starts with conversations, not coordination.
+            Every Monday, the right contacts are found, checked, and ready, so your week starts with conversations, not coordination.
           </p>
         </div>
 
@@ -199,7 +199,7 @@ function EmailPreview() {
       <div className="mt-5 space-y-3 text-white/75 leading-relaxed font-light text-[15px]">
         <p>Hi Jennifer,</p>
         <p>
-          Saw Maple Ridge manages 240 units across six properties in the GTA — most of those buildings are coming up on the typical re-inspection window.
+          Saw Maple Ridge manages 240 units across six properties in the GTA, most of those buildings are coming up on the typical re-inspection window.
         </p>
         <button className="text-[color:var(--gold)] text-sm font-medium hover:underline">
           See more...
