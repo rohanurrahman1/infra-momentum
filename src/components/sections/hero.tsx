@@ -6,11 +6,8 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-16 overflow-hidden">
       <div
-        className="absolute inset-0 -z-10 opacity-60"
-        style={{
-          background:
-            "radial-gradient(ellipse 80% 50% at 50% 0%, color-mix(in oklab, var(--gold) 8%, transparent), transparent 70%)",
-        }}
+        className="absolute inset-0 -z-10 gold-glow opacity-70"
+        style={{ pointerEvents: "none" }}
       />
 
       <div className="max-w-4xl mx-auto text-center">
