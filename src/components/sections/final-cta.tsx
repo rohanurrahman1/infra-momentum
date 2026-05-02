@@ -20,9 +20,9 @@ export function FinalCta() {
         >
           The contractors who move first
           <br />
-          are the ones property managers
+          are the ones <span className="italic text-[color:var(--gold)]">property managers</span>
           <br />
-          <span className="italic text-[color:var(--gold)]">end up calling back.</span>
+          end up calling back.
         </h2>
         <p data-reveal-child className="mt-6 text-white/60 font-light text-lg max-w-xl mx-auto">
           One 20-minute call is all it takes to see whether this fits. We show you exactly what lands in your inbox on Monday and whether the contacts match your trade and location.
@@ -33,8 +33,8 @@ export function FinalCta() {
         <p data-reveal-child className="mt-6 text-white/40 font-light text-sm">
           No commitment. No sales pressure. A straight conversation.
         </p>
-        <p data-reveal-child className="mt-2 text-white/40 italic font-light text-sm">
-          Engagements start from a fraction of what you're already spending, covered on the call.
+        <p data-reveal-child className="mt-1 text-white/40 font-light text-sm">
+          Engagements start from <span className="text-[color:var(--gold)]">a fraction of what you're already spending</span> covered on the call.
         </p>
       </div>
     </section>
