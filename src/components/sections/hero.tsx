@@ -8,8 +8,8 @@ export function Hero() {
       <div className="relative max-w-4xl mx-auto text-center">
         <div
           aria-hidden
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 gold-glow opacity-80 pointer-events-none"
-          style={{ width: "min(900px, 110%)", height: "min(560px, 130%)" }}
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 gold-glow pointer-events-none"
+          style={{ width: "min(1100px, 130%)", height: "min(700px, 160%)", opacity: 1.2 }}
         />
         <span
           className="inline-block fade-up rounded-full px-4 py-1.5 text-[13px] font-normal"
