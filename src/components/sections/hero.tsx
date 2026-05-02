@@ -5,12 +5,15 @@ import { useCountUp } from "@/hooks/use-count-up";
 export function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-16 overflow-hidden">
-      <div className="relative max-w-4xl mx-auto text-center">
-        <div
-          aria-hidden
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 gold-glow pointer-events-none"
-          style={{ width: "min(1100px, 130%)", height: "min(700px, 160%)", opacity: 1.2 }}
-        />
+      <div
+        className="absolute inset-0 -z-10 opacity-60"
+        style={{
+          background:
+            "radial-gradient(ellipse 80% 50% at 50% 0%, color-mix(in oklab, var(--gold) 8%, transparent), transparent 70%)",
+        }}
+      />
+
+      <div className="max-w-4xl mx-auto text-center">
         <span
           className="inline-block fade-up rounded-full px-4 py-1.5 text-[13px] font-normal"
           style={{
