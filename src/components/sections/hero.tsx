@@ -6,12 +6,13 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-16 overflow-hidden">
       <div
-        className="absolute left-1/2 -translate-x-1/2 -z-10 gold-glow opacity-70 pointer-events-none"
+        className="absolute left-1/2 top-1/2 -z-10 pointer-events-none"
         style={{
-          top: "50%",
           transform: "translate(-50%, -50%)",
-          width: "min(1200px, 110vw)",
-          height: "min(700px, 80vh)",
+          width: "min(1100px, 110vw)",
+          height: "min(750px, 90vh)",
+          background:
+            "radial-gradient(ellipse at center, color-mix(in oklab, var(--gold) 22%, transparent) 0%, color-mix(in oklab, var(--gold) 10%, transparent) 35%, transparent 70%)",
         }}
       />
 
