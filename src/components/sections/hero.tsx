@@ -6,17 +6,14 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-16 overflow-hidden">
       <div
-        aria-hidden
-        className="pointer-events-none absolute left-1/2 -translate-x-1/2 -z-10 w-[1200px] h-[700px] max-w-[120vw]"
+        className="absolute inset-0 -z-10 opacity-60"
         style={{
-          top: "-150px",
           background:
-            "radial-gradient(ellipse 50% 50% at 50% 50%, rgba(201,168,76,0.55) 0%, rgba(201,168,76,0.25) 30%, rgba(201,168,76,0.08) 55%, transparent 75%)",
-          filter: "blur(40px)",
+            "radial-gradient(ellipse 80% 50% at 50% 0%, color-mix(in oklab, var(--gold) 8%, transparent), transparent 70%)",
         }}
       />
 
-      <div className="max-w-4xl mx-auto text-center relative">
+      <div className="max-w-4xl mx-auto text-center">
         <span
           className="inline-block fade-up rounded-full px-4 py-1.5 text-[13px] font-normal"
           style={{
