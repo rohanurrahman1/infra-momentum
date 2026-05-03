@@ -6,20 +6,13 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-16 overflow-hidden">
       <div
-        className="absolute inset-0 -z-10 opacity-60"
-        style={{
-          background:
-            "radial-gradient(ellipse 80% 50% at 50% 0%, color-mix(in oklab, var(--gold) 8%, transparent), transparent 70%)",
-        }}
-      />
-
-      <div
         aria-hidden
-        className="pointer-events-none absolute left-1/2 -translate-x-1/2 -z-10 w-[90vw] h-[55vh] max-w-[1100px] blur-3xl"
+        className="pointer-events-none absolute left-1/2 -translate-x-1/2 -z-10 w-[1200px] h-[700px] max-w-[120vw]"
         style={{
-          top: "0px",
+          top: "-150px",
           background:
-            "radial-gradient(ellipse at 50% 30%, color-mix(in oklab, var(--gold) 32%, transparent) 0%, color-mix(in oklab, var(--gold) 14%, transparent) 35%, transparent 70%)",
+            "radial-gradient(ellipse 50% 50% at 50% 50%, rgba(201,168,76,0.55) 0%, rgba(201,168,76,0.25) 30%, rgba(201,168,76,0.08) 55%, transparent 75%)",
+          filter: "blur(40px)",
         }}
       />
 
