@@ -32,9 +32,9 @@ export function Hero() {
             animationDelay: "150ms",
           }}
         >
-          Stop waiting for referrals
+          The contractors who move first are the ones
           <br />
-          <em className="italic text-[color:var(--gold)] font-serif not-italic" style={{ fontStyle: "italic" }}>to find you.</em>
+          <em className="italic text-[color:var(--gold)] font-serif not-italic" style={{ fontStyle: "italic" }}>property managers end up calling back.</em>
         </h1>
 
         <p
