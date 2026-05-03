@@ -13,7 +13,16 @@ export function Hero() {
         }}
       />
 
-      <div className="max-w-4xl mx-auto text-center">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 w-[80vw] h-[60vh] max-w-[900px] blur-3xl"
+        style={{
+          background:
+            "radial-gradient(ellipse at center, color-mix(in oklab, var(--gold) 28%, transparent) 0%, color-mix(in oklab, var(--gold) 10%, transparent) 40%, transparent 70%)",
+        }}
+      />
+
+      <div className="max-w-4xl mx-auto text-center relative">
         <span
           className="inline-block fade-up rounded-full px-4 py-1.5 text-[13px] font-normal"
           style={{
