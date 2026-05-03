@@ -15,11 +15,11 @@ export function Hero() {
 
       <div
         aria-hidden
-        className="pointer-events-none absolute left-1/2 -translate-x-1/2 -z-10 w-[90vw] h-[70vh] max-w-[1000px] blur-3xl"
+        className="pointer-events-none absolute left-1/2 -translate-x-1/2 -z-10 w-[90vw] h-[55vh] max-w-[1100px] blur-3xl"
         style={{
-          top: "20%",
+          top: "0px",
           background:
-            "radial-gradient(ellipse at center, color-mix(in oklab, var(--gold) 30%, transparent) 0%, color-mix(in oklab, var(--gold) 12%, transparent) 40%, transparent 70%)",
+            "radial-gradient(ellipse at 50% 30%, color-mix(in oklab, var(--gold) 32%, transparent) 0%, color-mix(in oklab, var(--gold) 14%, transparent) 35%, transparent 70%)",
         }}
       />
 
