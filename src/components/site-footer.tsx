@@ -16,7 +16,7 @@ export function SiteFooter() {
             <button onClick={open} className="hover:text-[color:var(--gold)] transition-colors">Book a Call</button>
           </div>
           <div className="flex md:justify-end gap-4">
-            <a href="#" aria-label="LinkedIn" className="text-white/50 hover:text-[color:var(--gold)] transition-colors">
+            <a href="https://www.linkedin.com/in/meemcho/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-white/50 hover:text-[color:var(--gold)] transition-colors">
               <Linkedin size={18} />
             </a>
             <a href="https://www.instagram.com/meem.recode?igsh=ZnQyMnNxbmV2anM4&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-white/50 hover:text-[color:var(--gold)] transition-colors">
