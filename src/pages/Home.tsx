@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
 import { LeadModalProvider } from "@/components/lead-modal";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
@@ -10,27 +10,12 @@ import { Testimonials } from "@/components/sections/testimonials";
 import { Faq } from "@/components/sections/faq";
 import { FinalCta } from "@/components/sections/final-cta";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Infrakore | B2B Lead Generation for Ontario Roofing & Exterior Contractors" },
-      {
-        name: "description",
-        content:
-          "Personalised emails to the right Ontario property managers, in your inbox every Monday. Built for roofing and exterior contractors.",
-      },
-      { property: "og:title", content: "Infrakore | Lead generation for Ontario contractors" },
-      {
-        property: "og:description",
-        content:
-          "We find the right property managers for your trade, check they're a fit, and have personalised emails waiting in your inbox every Monday.",
-      },
-    ],
-  }),
-  component: Index,
-});
+export default function Home() {
+  useEffect(() => {
+    document.title =
+      "Infrakore | B2B Lead Generation for Ontario Roofing & Exterior Contractors";
+  }, []);
 
-function Index() {
   return (
     <LeadModalProvider>
       <div className="min-h-screen" style={{ background: "#0F1713" }}>
