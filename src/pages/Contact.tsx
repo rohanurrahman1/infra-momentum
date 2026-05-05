@@ -1,30 +1,14 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { LeadModalProvider } from "@/components/lead-modal";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 
-export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact Infrakore | Book a Strategy Call" },
-      {
-        name: "description",
-        content:
-          "Book a 20-minute strategy call with Infrakore. No commitment, no sales pressure. A straight conversation about your trade.",
-      },
-      { property: "og:title", content: "Contact Infrakore" },
-      {
-        property: "og:description",
-        content: "Book a 20-minute strategy call. No commitment. A straight conversation.",
-      },
-    ],
-  }),
-  component: Contact,
-});
-
-function Contact() {
+export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  useEffect(() => {
+    document.title = "Contact Infrakore | Book a Strategy Call";
+  }, []);
+
   return (
     <LeadModalProvider>
       <div className="min-h-screen flex flex-col" style={{ background: "#0F1713" }}>
