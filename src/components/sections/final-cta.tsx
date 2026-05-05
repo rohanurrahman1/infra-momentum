@@ -11,16 +11,16 @@ export function FinalCta() {
       />
       <div ref={ref} className="reveal relative max-w-3xl mx-auto text-center">
         <span data-reveal-child className="text-[color:var(--gold)] text-xs font-medium tracking-[0.2em] uppercase">
-          Get started
+          A straight conversation
         </span>
         <h2
           data-reveal-child
           className="font-serif text-white mt-4 leading-[1.05]"
           style={{ fontSize: "clamp(2.5rem, 6vw, 4rem)" }}
         >
-          Stop waiting for referrals
+          Twenty minutes.
           <br />
-          <span className="italic text-[color:var(--gold)]">to find you.</span>
+          <span className="italic text-[color:var(--gold)]">We show you the system. You decide if it fits.</span>
         </h2>
         <p data-reveal-child className="mt-6 text-white/60 font-light text-lg max-w-xl mx-auto">
           Book a 20-minute call. We walk you through exactly how it works, what your inbox looks like on Monday, and whether this is the right fit for your business.
