@@ -6,10 +6,10 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-16 overflow-hidden">
       <div
-        className="absolute inset-0 -z-10 gold-glow opacity-70 pointer-events-none"
+        className="absolute inset-0 z-0 gold-glow opacity-90 pointer-events-none"
       />
 
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="relative z-10 max-w-4xl mx-auto text-center">
         <span
           className="inline-block fade-up rounded-full px-4 py-1.5 text-[13px] font-normal"
           style={{
