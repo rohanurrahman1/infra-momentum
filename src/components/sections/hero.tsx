@@ -63,7 +63,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="mt-20 w-full max-w-4xl mx-auto grid grid-cols-3 gap-6 sm:gap-12">
+      <div className="relative z-10 mt-20 w-full max-w-4xl mx-auto grid grid-cols-3 gap-6 sm:gap-12">
         <Stat label="Delivered every" text="Monday" />
         <Stat label="Saved vs typical tools" text="$2–4k" divider />
         <Stat label="Hour of setup. That's it." count={1} divider />
