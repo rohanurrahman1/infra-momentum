@@ -43,7 +43,7 @@ export function Faq() {
           <h2 className="font-serif text-white mt-4 leading-[1.1]" style={{ fontSize: "clamp(2rem, 4.5vw, 3.25rem)" }}>
             Straight answers.
           </h2>
-          <p className="mt-5 font-light text-lg" style={{ color: "#D4CCBE" }">
+          <p className="mt-5 font-light text-lg" style={{ color: "#D4CCBE" }}>
             Questions that most business like yours ask.
           </p>
         </div>

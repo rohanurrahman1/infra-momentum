@@ -38,7 +38,7 @@ export function HowItWorks() {
             <br />
             before you open your inbox.
           </h2>
-          <p className="mt-5 font-light text-lg" style={{ color: "#D4CCBE" }">
+          <p className="mt-5 font-light text-lg" style={{ color: "#D4CCBE" }}>
             Every Monday, the right contacts are found, checked, and ready, so your week starts with conversations, not coordination.
           </p>
         </div>
