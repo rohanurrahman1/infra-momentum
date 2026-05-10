@@ -34,8 +34,8 @@ export function Hero() {
         </h1>
 
         <p
-          className="fade-up mt-6 mx-auto text-white/55 font-light text-lg leading-relaxed max-w-xl"
-          style={{ animationDelay: "300ms" }}
+          className="fade-up mt-6 mx-auto font-light text-lg leading-relaxed max-w-xl"
+          style={{ animationDelay: "300ms", color: "#D4CCBE" }}
         >
           We find the right property managers for your trade, check they're a fit,
           and have personalised emails in your inbox every Monday.
@@ -45,7 +45,7 @@ export function Hero() {
           className="fade-up mt-10 flex flex-col sm:flex-row gap-3 justify-center"
           style={{ animationDelay: "450ms" }}
         >
-          <CtaButton size="lg">Book A Free 20 Min Strategy Call</CtaButton>
+          <CtaButton size="lg">Book A Complementary 20min Strategy Call</CtaButton>
           <a href="#how-it-works">
             <CtaButton variant="secondary" size="lg" onClick={() => {
               document.getElementById("how-it-works")?.scrollIntoView({ behavior: "smooth" });
@@ -55,6 +55,13 @@ export function Hero() {
           </a>
         </div>
 
+        <p
+          className="fade-up mt-4 font-light text-sm italic"
+          style={{ animationDelay: "550ms", color: "#B8B0A4" }}
+        >
+          Prefer a call? <a href="tel:+16478098469" className="text-[color:var(--gold)] not-italic hover:underline">+1 (647) 809 8469</a>
+        </p>
+
         <div
           className="fade-up mt-16 flex justify-center text-[color:var(--gold)]"
           style={{ animationDelay: "700ms" }}
@@ -63,7 +70,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="relative z-10 mt-20 w-full max-w-4xl mx-auto grid grid-cols-3 gap-6 sm:gap-12">
+      <div className="relative z-10 mt-16 w-full max-w-4xl mx-auto grid grid-cols-3 gap-6 sm:gap-12">
         <Stat label="Delivered every" text="Monday" />
         <Stat label="Saved vs typical tools" text="$2–4k" divider />
         <Stat label="Hour of setup. That's it." count={1} divider />
@@ -89,7 +96,7 @@ function Stat({
       <div className="font-serif text-white" style={{ fontSize: "clamp(2rem, 4.5vw, 3rem)" }}>
         {count !== undefined ? <span ref={ref}>{value}</span> : text}
       </div>
-      <div className="mt-2 text-xs sm:text-sm text-white/45 font-light tracking-wide">{label}</div>
+      <div className="mt-2 text-xs sm:text-sm font-light tracking-wide" style={{ color: "#B8B0A4" }}>{label}</div>
     </div>
   );
 }

@@ -38,13 +38,13 @@ export function HowItWorks() {
             <br />
             before you open your inbox.
           </h2>
-          <p className="mt-5 text-white/55 font-light text-lg">
+          <p className="mt-5 font-light text-lg" style={{ color: "#D4CCBE" }}>
             Every Monday, the right contacts are found, checked, and ready, so your week starts with conversations, not coordination.
           </p>
         </div>
 
         <div className="mt-16 grid lg:grid-cols-2 gap-10 items-start">
-          <div className="order-2 lg:order-1 lg:sticky lg:top-24">
+          <div className="order-2 lg:order-1 lg:sticky lg:top-24 hidden lg:block">
             <Preview active={active} />
           </div>
 
@@ -52,29 +52,35 @@ export function HowItWorks() {
             {steps.map((s, i) => {
               const isActive = i === active;
               return (
-                <button
-                  key={s.tag}
-                  onClick={() => setActive(i)}
-                  className="w-full text-left rounded-[14px] p-7 lift block"
-                  style={{
-                    background: isActive ? "#152019" : "#111A14",
-                    border: "1px solid rgba(255,255,255,0.07)",
-                    borderLeft: isActive ? "3px solid var(--gold)" : "1px solid rgba(255,255,255,0.07)",
-                  }}
-                >
-                  <span
-                    className="inline-block rounded-full px-3 py-1 text-xs"
+                <div key={s.tag}>
+                  <button
+                    onClick={() => setActive(i)}
+                    className="w-full text-left rounded-[14px] p-7 lift block"
                     style={{
-                      border: "1px solid var(--gold-border)",
-                      color: "var(--gold)",
+                      background: isActive ? "#152019" : "#111A14",
+                      border: "1px solid rgba(255,255,255,0.07)",
+                      borderLeft: isActive ? "3px solid var(--gold)" : "1px solid rgba(255,255,255,0.07)",
                     }}
                   >
-                    {s.tag}
-                  </span>
-                  <h3 className="font-serif text-white mt-4 text-2xl leading-snug">{s.title}</h3>
-                  <p className="mt-3 text-white/65 font-light leading-relaxed">{s.body}</p>
-                  <p className="mt-3 text-white/40 font-light italic text-sm">{s.note}</p>
-                </button>
+                    <span
+                      className="inline-block rounded-full px-3 py-1 text-xs"
+                      style={{
+                        border: "1px solid var(--gold-border)",
+                        color: "var(--gold)",
+                      }}
+                    >
+                      {s.tag}
+                    </span>
+                    <h3 className="font-serif text-white mt-4 text-2xl leading-snug">{s.title}</h3>
+                    <p className="mt-3 font-light leading-relaxed" style={{ color: "#D4CCBE" }}>{s.body}</p>
+                    <p className="mt-3 font-light italic text-sm" style={{ color: "#B8B0A4" }}>{s.note}</p>
+                  </button>
+                  {isActive && (
+                    <div className="lg:hidden mt-4">
+                      <Preview active={active} />
+                    </div>
+                  )}
+                </div>
               );
             })}
           </div>

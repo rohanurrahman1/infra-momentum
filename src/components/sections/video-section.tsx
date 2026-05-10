@@ -15,7 +15,7 @@ export function VideoSection() {
             <br />
             while you work.
           </h2>
-          <p className="mt-5 text-white/55 font-light text-lg max-w-2xl mx-auto">
+          <p className="mt-5 font-light text-lg max-w-2xl mx-auto" style={{ color: "#D4CCBE" }}>
             Beyond the Monday inbox, the platform keeps running, tracking, and
             surfacing the right information so nothing slips through the week.
           </p>
