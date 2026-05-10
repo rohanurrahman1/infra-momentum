@@ -29,7 +29,7 @@ export function FinalCta() {
           No commitment. No sales pressure. A straight conversation.
         </p>
         <div data-reveal-child className="mt-10">
-          <CtaButton size="lg">Book Your Free 20 Min Strategy Call</CtaButton>
+          <CtaButton size="lg">Book A Complementary 20min Strategy Call</CtaButton>
         </div>
         <p data-reveal-child className="mt-6 text-white/40 italic font-light text-sm">
           Engagements start from a fraction of what you're already spending. Covered on the call.

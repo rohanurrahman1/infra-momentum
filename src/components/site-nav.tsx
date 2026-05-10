@@ -17,14 +17,14 @@ export function Logo({ className = "" }: { className?: string }) {
   );
 }
 
-const INSTAGRAM_URL = "https://www.instagram.com/meem.recode?igsh=ZnQyMnNxbmV2anM4&utm_source=qr";
+const LINKEDIN_URL = "https://www.linkedin.com/in/meemcho/";
 
 const links = [
   { href: "#how-it-works", label: "How it works", external: false },
   { href: "#results", label: "Results", external: false },
   { href: "#faq", label: "FAQ", external: false },
   { href: "/blog", label: "Blog", external: false },
-  { href: INSTAGRAM_URL, label: "Social Media", external: true },
+  { href: LINKEDIN_URL, label: "Social Media", external: true },
 ];
 
 export function SiteNav() {

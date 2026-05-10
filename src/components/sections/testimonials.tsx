@@ -59,7 +59,7 @@ export function Testimonials() {
             className="rounded-[14px] p-7 flex items-center justify-center"
             style={{ background: "#111A14", border: "1px solid rgba(255,255,255,0.07)", minHeight: "240px" }}
           >
-            <p className="font-serif italic text-white/40 text-xl">Coming soon..</p>
+            <p className="font-serif italic text-center px-4 text-lg" style={{ color: "#B8B0A4" }}>More results being documented.<br/>Last updated May 2025.</p>
           </div>
         </div>
       </div>
