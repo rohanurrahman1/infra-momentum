@@ -23,7 +23,7 @@ export function WhyItWorks() {
             <br />
             effort every week. This one doesn't.
           </h2>
-          <p className="mt-5 text-white/55 font-light text-lg">
+          <p className="mt-5 font-light text-lg" style={{ color: "#D4CCBE" }">
             Built for contractors who are good at the work, not at chasing the next job.
           </p>
         </div>

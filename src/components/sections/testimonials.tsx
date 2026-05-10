@@ -23,7 +23,7 @@ export function Testimonials() {
             <br />
             made the switch.
           </h2>
-          <p className="mt-5 text-white/55 font-light text-lg">
+          <p className="mt-5 font-light text-lg" style={{ color: "#D4CCBE" }">
             Roofing and exterior contractors now working with commercial clients they couldn't reach before.
           </p>
         </div>
