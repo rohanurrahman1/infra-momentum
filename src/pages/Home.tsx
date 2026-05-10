@@ -8,6 +8,7 @@ import { HowItWorks } from "@/components/sections/how-it-works";
 import { WhyItWorks } from "@/components/sections/why-it-works";
 import { Testimonials } from "@/components/sections/testimonials";
 import { Faq } from "@/components/sections/faq";
+import { LatestBlogs } from "@/components/sections/latest-blogs";
 import { FinalCta } from "@/components/sections/final-cta";
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
           <WhyItWorks />
           <Testimonials />
           <Faq />
+          <LatestBlogs />
           <FinalCta />
         </main>
         <SiteFooter />
