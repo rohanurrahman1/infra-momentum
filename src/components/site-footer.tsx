@@ -15,7 +15,10 @@ export function SiteFooter() {
             <a href="#faq" className="hover:text-[color:var(--gold)] transition-colors">FAQ</a>
             <button onClick={open} className="hover:text-[color:var(--gold)] transition-colors">Book a Call</button>
           </div>
-          <div className="flex md:justify-end gap-4">
+          <div className="flex md:justify-end items-center gap-4 flex-wrap">
+            <a href="tel:+16478098469" className="text-sm hover:text-[color:var(--gold)] transition-colors" style={{ color: "#D4CCBE" }}>
+              +1 (647) 809 8469
+            </a>
             <a href="https://www.linkedin.com/in/meemcho/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-white/50 hover:text-[color:var(--gold)] transition-colors">
               <Linkedin size={18} />
             </a>
