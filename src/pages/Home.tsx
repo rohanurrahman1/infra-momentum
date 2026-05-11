@@ -9,6 +9,7 @@ import { WhyItWorks } from "@/components/sections/why-it-works";
 import { Testimonials } from "@/components/sections/testimonials";
 import { Faq } from "@/components/sections/faq";
 import { LatestBlogs } from "@/components/sections/latest-blogs";
+import { Pricing } from "@/components/sections/pricing";
 import { FinalCta } from "@/components/sections/final-cta";
 
 export default function Home() {
