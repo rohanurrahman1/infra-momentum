@@ -28,23 +28,30 @@ export function WhyItWorks() {
           </p>
         </div>
 
-        {/* Mobile: stacked cards */}
-        <div className="mt-14 md:hidden space-y-4" data-reveal-child>
-          {rows.map(([cat, typ, infra]) => (
+        {/* Mobile: two-column table */}
+        <div
+          className="mt-14 md:hidden rounded-[14px] overflow-hidden"
+          data-reveal-child
+          style={{ background: "#111A14", border: "1px solid rgba(255,255,255,0.07)" }}
+        >
+          <div className="grid grid-cols-2 px-4 py-3 text-[10px] uppercase tracking-[0.16em] border-b border-white/10">
+            <div style={{ color: "#e88a8a" }}>Typical Approach</div>
+            <div className="text-[color:var(--gold)] pl-3 border-l border-white/10">Infrakore</div>
+          </div>
+          {rows.map(([cat, typ, infra], i) => (
             <div
               key={cat}
-              className="rounded-[14px] p-5"
-              style={{ background: "#111A14", border: "1px solid rgba(255,255,255,0.07)" }}
+              className={i !== rows.length - 1 ? "border-b border-white/5" : ""}
             >
-              <div className="text-[11px] uppercase tracking-[0.18em] text-[color:var(--gold)] mb-3">{cat}</div>
-              <div className="space-y-2 text-sm">
-                <div>
-                  <div className="text-[10px] uppercase tracking-wider text-white/40 mb-1">Typical Approach</div>
-                  <div className="font-light" style={{ color: "rgba(232, 138, 138, 0.85)" }}>{typ}</div>
+              <div className="px-4 pt-4 pb-2 text-[11px] uppercase tracking-[0.18em] text-[color:var(--gold)]">
+                {cat}
+              </div>
+              <div className="grid grid-cols-2 px-4 pb-4 text-sm">
+                <div className="font-light pr-3" style={{ color: "rgba(232, 138, 138, 0.85)" }}>
+                  {typ}
                 </div>
-                <div className="pt-2 border-t border-white/5">
-                  <div className="text-[10px] uppercase tracking-wider text-white/40 mb-1">Infrakore</div>
-                  <div className="text-white font-medium">{infra}</div>
+                <div className="text-white font-medium pl-3 border-l border-white/10">
+                  {infra}
                 </div>
               </div>
             </div>
