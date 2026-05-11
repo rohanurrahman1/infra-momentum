@@ -28,6 +28,7 @@ export default function Home() {
           <HowItWorks />
           <WhyItWorks />
           <Testimonials />
+          <Pricing />
           <Faq />
           <LatestBlogs />
           <FinalCta />
