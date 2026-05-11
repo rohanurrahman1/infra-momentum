@@ -11,14 +11,16 @@ export function Hero() {
 
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <span
-          className="inline-block fade-up rounded-full px-4 py-1.5 text-[13px] font-normal"
+          className="inline-block fade-up font-serif rounded-2xl px-6 py-3 leading-tight"
           style={{
-            border: "1px solid var(--gold-border)",
-            color: "var(--gold)",
+            border: "1.5px solid rgba(255,255,255,0.85)",
+            color: "#FFFFFF",
+            fontSize: "clamp(1.75rem, 4.6vw, 3.25rem)",
             animationDelay: "0ms",
           }}
         >
-          Built for roofing and exterior contractors
+          Built for <span style={{ color: "var(--gold)" }}>roofing</span> and{" "}
+          <span style={{ color: "var(--gold)" }}>exterior contractors</span>
         </span>
 
         <h1
