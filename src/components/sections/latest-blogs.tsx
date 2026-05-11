@@ -40,7 +40,7 @@ export function LatestBlogs() {
           </Link>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-reveal-child>
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto" data-reveal-child>
           {posts === null
             ? Array.from({ length: 3 }).map((_, i) => (
                 <div
@@ -52,14 +52,14 @@ export function LatestBlogs() {
                   }}
                 >
                   <div className="aspect-[16/10] bg-white/5" />
-                  <div className="p-6 space-y-3">
-                    <div className="h-3 w-24 bg-white/5 rounded" />
-                    <div className="h-5 w-3/4 bg-white/10 rounded" />
-                    <div className="h-4 w-full bg-white/5 rounded" />
+                  <div className="p-4 space-y-3">
+                    <div className="h-3 w-20 bg-white/5 rounded" />
+                    <div className="h-4 w-3/4 bg-white/10 rounded" />
+                    <div className="h-3 w-full bg-white/5 rounded" />
                   </div>
                 </div>
               ))
-            : posts.map((p) => <BlogCard key={p.slug} post={p} />)}
+            : posts.map((p) => <BlogCard key={p.slug} post={p} variant="compact" />)}
         </div>
       </div>
     </section>
