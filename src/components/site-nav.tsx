@@ -17,14 +17,11 @@ export function Logo({ className = "" }: { className?: string }) {
   );
 }
 
-const LINKEDIN_URL = "https://www.linkedin.com/in/meemcho/";
-
 const links = [
   { href: "#how-it-works", label: "How it works", external: false },
   { href: "#results", label: "Results", external: false },
+  { href: "#pricing", label: "Pricing", external: false },
   { href: "#faq", label: "FAQ", external: false },
-  { href: "/blog", label: "Blog", external: false },
-  { href: LINKEDIN_URL, label: "Social Media", external: true },
 ];
 
 export function SiteNav() {
