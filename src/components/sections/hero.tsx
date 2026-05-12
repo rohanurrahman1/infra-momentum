@@ -15,7 +15,7 @@ export function Hero() {
           style={{
             border: "1.5px solid rgba(255,255,255,0.85)",
             color: "#FFFFFF",
-            fontSize: "clamp(1.75rem, 4.6vw, 3.25rem)",
+            fontSize: "clamp(1.35rem, 3.6vw, 2.5rem)",
             animationDelay: "0ms",
           }}
         >
@@ -75,7 +75,7 @@ export function Hero() {
       <div className="relative z-10 mt-16 w-full max-w-4xl mx-auto grid grid-cols-3 gap-6 sm:gap-12">
         <Stat label="Delivered every" text="Monday" />
         <Stat label="Saved vs typical tools" text="$2–4k" divider />
-        <Stat label="Hour of setup. That's it." count={1} divider />
+        <Stat label="week of setup. That's it." text="2" divider />
       </div>
     </section>
   );

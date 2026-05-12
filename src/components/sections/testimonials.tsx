@@ -2,7 +2,7 @@ import { useReveal } from "@/hooks/use-reveal";
 
 const mainReview = {
   quote:
-    "Meem was excellent to work with. She delivered a well-structured AI automation exactly within scope and was incredibly thorough throughout the process. What really stood out was her judgment, she focuses on building what actually adds value and will clearly tell you when something isn't necessary instead of creating extra flows that add complexity. She also implemented clear fallback logic, so the workflow had multiple routing points in case something failed, which made the system much more reliable. That level of honesty and clarity is rare and efficient. Communication was smooth, the work was thoughtful, and the final system worked perfectly. Very reliable. Highly recommend!",
+    "I built this business on referrals. That works - until it doesn't. Seasonal slowdowns with nothing else on the books hit differently when you've got a crew to keep busy. I wanted property management work because it's steady, recurring contracts. But I had no idea how to get in front of those people, or what to say when I did. That problem is now gone. Every Monday the right contacts are there with the message already written. I review it, and send it. Two of those emails turned into real conversations. I haven't had to wait on a referral since, and that's been keeping us busy.",
   initials: "MK",
   name: "Mark K.",
   role: "Owner · MK Roofing, Toronto",
