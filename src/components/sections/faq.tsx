@@ -91,14 +91,19 @@ export function Faq() {
                 </button>
                 <div
                   className="overflow-hidden transition-all duration-300 ease-out"
-                  style={{ maxHeight: isOpen ? 400 : 0 }}
+                  style={{ maxHeight: isOpen ? 800 : 0 }}
                 >
-                  <p
-                    className="px-6 pb-6 font-serif text-[17px] md:text-[18px] leading-[1.7] tracking-[0.005em]"
-                    style={{ color: "rgba(255,255,255,0.78)", fontWeight: 300 }}
-                  >
-                    {f.a}
-                  </p>
+                  <div className="px-6 pb-6 space-y-4">
+                    {f.a.split("\n\n").map((para, idx) => (
+                      <p
+                        key={idx}
+                        className="font-serif text-[17px] md:text-[18px] leading-[1.7] tracking-[0.005em]"
+                        style={{ color: "rgba(255,255,255,0.78)", fontWeight: 300 }}
+                      >
+                        {para}
+                      </p>
+                    ))}
+                  </div>
                 </div>
               </div>
             );
