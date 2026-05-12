@@ -7,6 +7,9 @@ const rows: [string, string, string][] = [
   ["Follow ups", "Missed or inconsistent", "Built in. Nothing falls through"],
   ["Monthly cost", "$2,000 to $4,000 across tools", "A fraction of that on one platform"],
   ["Weekly time", "Hours every week", "10 minutes on Monday"],
+  ["Contact data", "Static lists, goes stale", "Sourced and refreshed weekly"],
+  ["After you send", "Manual follow-up or forgotten", "Follow-ups queued automatically"],
+  ["When they reply", "Easy to miss or delayed", "Flagged immediately. Next message ready."],
 ];
 
 export function WhyItWorks() {
