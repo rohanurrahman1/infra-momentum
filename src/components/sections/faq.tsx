@@ -21,11 +21,27 @@ const faqs = [
   },
   {
     q: "What does it cost?",
-    a: "Covered in full on the discovery call. Pricing is based on your trade type, location, and volume. What I can tell you is that most contractors are spending $2,000 to $4,000 a month across separate tools for less than what this handles end to end.",
+    a: "Simple, one-time investment. Ongoing for less than you think.\n\nGetting started is $2,799. That covers the full setup, your targets identified, your trade matched, your outreach system built, and your first Monday inbox ready to go.\n\nAfter that, it runs for $300/month. That keeps the contacts refreshed, the emails personalised, and the system running every week, whether you're on a job or not.\n\nOne-time setup · $2,799, Monthly retainer · $300. No contracts. Cancel anytime.",
   },
   {
     q: "How quickly does it start?",
     a: "Most contractors see their first set of drafts in their inbox within the first week after the setup call. Timeline details are covered on the discovery call.",
+  },
+  {
+    q: "Is this just email templates?",
+    a: "No. The emails are what you see. Behind them is a system that sources contacts from live data, verifies them against your trade and region, and sequences follow-ups based on how each property manager responds. Templates don't track replies. This does.",
+  },
+  {
+    q: "What happens when a property manager replies?",
+    a: "The response is flagged and you're notified. Your next message is already drafted and waiting, written for that specific conversation and where it left off.",
+  },
+  {
+    q: "What if they don't reply at all?",
+    a: "Two follow-up drafts queue automatically, spaced at the right intervals. Each one is written for that specific contact and references the original outreach. You don't have to remember who you emailed or when, the system holds that for you.",
+  },
+  {
+    q: "How do you make sure emails don't go to spam?",
+    a: "Every email is checked before it goes out, deliverability, spam score, and sending behaviour are all monitored. The goal is inbox placement, not just outreach volume. An email that lands in spam is the same as no email at all.",
   },
 ];
 
@@ -75,14 +91,19 @@ export function Faq() {
                 </button>
                 <div
                   className="overflow-hidden transition-all duration-300 ease-out"
-                  style={{ maxHeight: isOpen ? 400 : 0 }}
+                  style={{ maxHeight: isOpen ? 800 : 0 }}
                 >
-                  <p
-                    className="px-6 pb-6 font-serif text-[17px] md:text-[18px] leading-[1.7] tracking-[0.005em]"
-                    style={{ color: "rgba(255,255,255,0.78)", fontWeight: 300 }}
-                  >
-                    {f.a}
-                  </p>
+                  <div className="px-6 pb-6 space-y-4">
+                    {f.a.split("\n\n").map((para, idx) => (
+                      <p
+                        key={idx}
+                        className="font-serif text-[17px] md:text-[18px] leading-[1.7] tracking-[0.005em]"
+                        style={{ color: "rgba(255,255,255,0.78)", fontWeight: 300 }}
+                      >
+                        {para}
+                      </p>
+                    ))}
+                  </div>
                 </div>
               </div>
             );
